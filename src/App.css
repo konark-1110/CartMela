@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+.right {
+  padding-right: 600px;
+}
+/*.tilehome{
+  background:url("https://previews.123rf.com/images/sutichak/sutichak1501/sutichak150100669/35516459-jean-texture-clothing-fashion-background-of-denim-textile-industrial.jpg");
+  color:white;
+  height: 500px;
+  width: 500px;
+}*/
+
+.clothes{
+  background: url("https://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2019/08/best_online_clothes_shops.jpg?itok=M3soL5rF");
+  height: 250px;
+  width: 1300px;
+}
+.brand-logo-left{
+  text-align: left;
+  font-size: 40px;
+  font-family: fantasy;
+}
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
