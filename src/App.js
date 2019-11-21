@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Navbar from './Components/Navbar';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './Components/Home.jsx';
+import Fashion from './Components/Fashion.jsx';
 import './App.css';
 
 class App extends Component {
 
   render() {
     return (
-        <BrowserRouter>
-            <div className="App">
-                <Navbar />
-
-                <button className="clothes"></button>
-
-            </div>
-        </BrowserRouter>
+      <Router>
+        <Switch>
+          <Route path="/Fashion">
+            <Fashion />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     );
   }
 }

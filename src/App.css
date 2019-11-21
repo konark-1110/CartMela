@@ -1,41 +1,76 @@
-.App {
-  text-align: center;
-}
-.right {
-  padding-right: 600px;
-}
-/*.tilehome{
-  background:url("https://previews.123rf.com/images/sutichak/sutichak1501/sutichak150100669/35516459-jean-texture-clothing-fashion-background-of-denim-textile-industrial.jpg");
-  color:white;
-  height: 500px;
-  width: 500px;
-}*/
-
-.clothes{
-  background: url("https://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2019/08/best_online_clothes_shops.jpg?itok=M3soL5rF");
-  height: 250px;
-  width: 1300px;
-}
-.brand-logo-left{
-  text-align: left;
-  font-size: 40px;
-  font-family: fantasy;
-}
-.App-logo {
-  height: 40vmin;
+.logo {
+    max-height: 65px;
+    min-width: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.widthcontrol {
+    max-width: 950px;
 }
 
-.App-link {
-  color: #09d3ac;
+.clothes {
+    background: url("https://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2019/08/best_online_clothes_shops.jpg?itok=M3soL5rF");
+    height: 250px;
+    width: 1300px;
+}
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+    color: #333;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.sidenav-trigger {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+.search {
+    width: 200px;
+    height: 30px;
 }
