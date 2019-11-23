@@ -1,17 +1,24 @@
 import React from "react";
 import Navbar from "./Navbar.jsx";
-import parallax1 from '../images/parallax1.jpg';
-import parallax2 from '../images/parallax2.gif';
+import { storeProducts } from "./data";
+import ProductArray from "./ProductArray.jsx";
 
-const Fashion = () => {
-    const span400 = {
-        "font-weight": "400"
-    };
+const Products = () => {
+    const ProductList = storeProducts;
     return (
         <div>
             <Navbar />
-            Product page
+
+            <div className="grey-text text-darken-3 lighten-3">
+                <center>
+                    <h2>Products</h2>
+                </center>
+                <main>
+                    <ProductArray products={ProductList} />
+                </main>
+            </div>
         </div>
     );
 };
-export default Fashion;
+
+export default Products;
