@@ -6,6 +6,11 @@ body {
     min-width: 150px;
 }
 
+.seeMore {
+    position: relative;
+    top: -5px;
+}
+
 .widthcontrol {
     max-width: 950px;
 }

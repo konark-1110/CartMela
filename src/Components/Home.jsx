@@ -1,27 +1,31 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar.jsx";
-import giphy from "../images/giphy.gif";
-import parallax2 from "../images/parallax2.gif";
+import { storeProducts as product } from "./data.js";
+import Card from "./Card.jsx";
 
 const LatestProduct = {
     fontSize: "1.4rem"
 };
 
+const productListStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center"
+};
+
 const ProductLink = {
-    height: "60vh",
     margin: "10vh"
 };
 
 class Home extends Component {
     render() {
-        console.log(giphy)
         return (
             <div>
                 <Navbar />
                 <div>
                     <div className="parallax-container">
                         <div className="parallax">
-                            <img src={giphy} alt="parallax1" />
+                            <img src="./images/parallax1.gif" alt="parallax1" />
                         </div>
                     </div>
                     <div className="section white">
@@ -50,7 +54,7 @@ class Home extends Component {
                     </div>
                     <div className="parallax-container">
                         <div className="parallax">
-                            <img src={parallax2} alt="parallax2" />
+                            <img src="./images/parallax2.gif" alt="parallax2" />
                         </div>
                     </div>
 
@@ -81,6 +85,54 @@ class Home extends Component {
                     </div>
                     <div style={ProductLink}>
                         <h1>See our Products.</h1>
+
+                        <div style={productListStyle}>
+                            <Card
+                                key={product[0].id}
+                                id={product[0].id}
+                                title={product[0].title}
+                                img={product[0].img}
+                                price={product[0].price}
+                                company={product[0].company}
+                                info={product[0].info}
+                                inCart={product[0].inCart}
+                                count={product[0].count}
+                                total={product[0].total}
+                            />
+                            <Card
+                                key={product[1].id}
+                                id={product[1].id}
+                                title={product[1].title}
+                                img={product[1].img}
+                                price={product[1].price}
+                                company={product[1].company}
+                                info={product[1].info}
+                                inCart={product[1].inCart}
+                                count={product[1].count}
+                                total={product[1].total}
+                            />
+                            <Card
+                                key={product[2].id}
+                                id={product[2].id}
+                                title={product[2].title}
+                                img={product[2].img}
+                                price={product[2].price}
+                                company={product[2].company}
+                                info={product[2].info}
+                                inCart={product[2].inCart}
+                                count={product[2].count}
+                                total={product[2].total}
+                            />
+                            <br />
+                        </div>
+                        <center>
+                            <a href="/products">
+                                <div className="chip blue">
+                                    <span className="flow-text seeMore">see more</span>
+                                <i className="material-icons">arrow_forward</i>
+                                </div>
+                            </a>
+                        </center>
                     </div>
                     <div className="section grey lighten-2">
                         <div className="row container">

@@ -71,7 +71,7 @@ body {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: #3f96cd;
+    opacity: 0;
 }
 
 .el-wrapper:hover .add-to-cart {
@@ -219,6 +219,7 @@ body {
     left: 0;
     font-family: "Lato", sans-serif;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .cart .price {
@@ -277,4 +278,5 @@ body {
     letter-spacing: 0.045em;
     text-transform: uppercase;
     white-space: nowrap;
+    cursor: pointer;
 }

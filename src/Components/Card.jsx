@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import "./productCard.css";
-import { Link } from "react-router-dom";
+import "./Card.css";
 
 class Card extends Component {
     getImage = () => {
         const image = this.props.img;
-        return image
-    }
+        return image;
+    };
     render() {
         const props = this.props;
         return (
@@ -31,7 +30,7 @@ class Card extends Component {
                                     </div>
                                     <div className="a-size">
                                         {props.price}
-                                        {"$"}
+                                        {"₹"}
                                     </div>
                                 </div>
                             </div>
@@ -41,18 +40,15 @@ class Card extends Component {
                                     <div className="h-bg-inner"></div>
                                 </div>
 
-                                <Link
-                                    to='/Details' 
-                                    className="cart"
-                                >
+                                <div className="cart">
                                     <span className="price">
                                         {props.price}
-                                        {"$"}
+                                        {"₹"}
                                     </span>
                                     <span className="add-to-cart">
                                         <span className="txt">See info</span>
                                     </span>
-                                </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../images/logo.jpg';
 import '../App.css';
 
 
@@ -11,7 +10,7 @@ const Navbar = (props) => {
         <div className="navbar-fixed">
             <nav className="white" role="navigation">
                 <div className="nav-wrapper container">
-                    <Link id="logo-container" exact to="/" className="brand-logo"><img className="logo" src={logo} alt="logo"/></Link>
+                    <Link id="logo-container" exact to="/" className="brand-logo"><img className="logo" src="./images/logo.jpg" alt="logo"/></Link>
                     <ul className="right hide-on-med-and-down">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/products'>Products</Link></li>
