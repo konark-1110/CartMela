@@ -71,7 +71,7 @@ body {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: #aef;
+    color: #3f96cd;
 }
 
 .el-wrapper:hover .add-to-cart {
@@ -115,7 +115,7 @@ body {
 
 .el-wrapper .img {
     width: auto;
-    height: 320px;
+    height: 250px;
     padding: 20px 0;
     -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
     -moz-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
@@ -207,7 +207,7 @@ body {
 }
 
 .a-size .size {
-    color: #aef;
+    color: #3f96cd;
 }
 
 .cart {
