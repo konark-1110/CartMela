@@ -1,11 +1,26 @@
-import React from 'react';
-import Navbar from './Navbar.jsx';
+import React from "react";
+import Navbar from "./Navbar.jsx";
+import Users from "./Users.jsx";
+import { users } from "./users.js";
 const About = () => {
-    const productListStyle = {
+    const userListStyle = {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center"
     };
+
+    const userArr = users.map(user => (
+        <Users
+            key={user.id}
+            id={user.id}
+            name={user.name}
+            location={user.location}
+            email={user.email}
+            dob={user.dob}
+            img={user.img}
+        />
+    ));
+
     return (
         <div>
             <Navbar />
@@ -14,10 +29,11 @@ const About = () => {
                     <h2>About us</h2>
                 </center>
                 <main>
-                    <div style={productListStyle}>About us</div>
+                    <div style={userListStyle}>{userArr}</div>
                 </main>
-            </div>        </div>
-    )
-}
+            </div>{" "}
+        </div>
+    );
+};
 
 export default About;
