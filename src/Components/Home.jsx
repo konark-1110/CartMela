@@ -48,7 +48,7 @@ class Home extends Component {
                                 <h5 className="grey-text text-darken-3 lighten-3">
                                     Starting from ₹64,900 MRP
                                 </h5>
-                                <a href="/">Buy now...</a>
+                                <a href="/products">Buy now...</a>
                             </center>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ class Home extends Component {
                                 <h5 className="grey-text lighten-3">
                                     Starting from ₹99,900 MRP
                                 </h5>
-                                <a href="/">Buy now...</a>
+                                <a href="/products">Buy now...</a>
                             </center>
                         </div>
                     </div>
@@ -128,8 +128,7 @@ class Home extends Component {
                         <center>
                             <a href="/products">
                                 <div className="chip blue">
-                                    <span className="flow-text seeMore">see more</span>
-                                <i className="material-icons">arrow_forward</i>
+                                    <span className="flow-text">see more</span>
                                 </div>
                             </a>
                         </center>

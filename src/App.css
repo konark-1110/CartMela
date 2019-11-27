@@ -6,37 +6,25 @@ body {
     min-width: 150px;
 }
 
-.seeMore {
-    position: relative;
-    top: -5px;
-}
-
 .widthcontrol {
     max-width: 950px;
 }
 
-.clothes {
-    background: url("https://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2019/08/best_online_clothes_shops.jpg?itok=M3soL5rF");
-    height: 250px;
-    width: 1300px;
-}
-
 .output {
-  color: #f23;
+    color: #f23;
 }
 
 .output::before {
-  content: "> ";
+    content: "> ";
 }
 
 .errorcode {
-  color: #f23;
+    color: #f23;
 }
-
 
 nav ul a,
 nav .brand-logo {
-    color: #333;
+    color: #444;
 }
 
 p {
@@ -82,9 +70,4 @@ p {
 
 footer.page-footer {
     margin: 0;
-}
-
-.search {
-    width: 200px;
-    height: 30px;
 }

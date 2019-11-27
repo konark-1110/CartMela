@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/cart.ico" />
+        <link rel="icon" href="%PUBLIC_URL%/images/cart.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta
@@ -57,6 +57,21 @@
                     $(".parallax").parallax();
                 }); // end of document ready
             })(jQuery); // end of jQuery name space
+            document.addEventListener("DOMContentLoaded", function() {
+                var elems = document.querySelectorAll(".sidenav");
+                var instances = M.Sidenav.init(elems, options);
+            });
+
+            // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+            // var collapsibleElem = document.querySelector('.collapsible');
+            // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+            // Or with jQuery
+
+            $(document).ready(function() {
+                $(".sidenav").sidenav();
+            });
         </script>
+        <script src="path/to/react-notifications/dist/react-notifications.js"></script>
     </body>
 </html>
